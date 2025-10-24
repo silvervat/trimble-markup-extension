@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Markup Extension",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://browser.connect.trimble.com/*"],
+      "js": ["assets/index-*.js"],  // Vite build'i output
+      "css": ["assets/index-*.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["https://browser.connect.trimble.com/*"]
+    }
+  ]
+}
