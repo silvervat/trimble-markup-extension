@@ -13,7 +13,7 @@ Lihtne extension Trimble Connect Workspace API jaoks – otsi objekte ja lisa ma
 - Lohista omadusi markup'isse.
 - Lisa värv/tekst ja rakenda – markupid ilmuvad 3D-viewer'isse!
 
-## Sõltuvused
+## Sõltuvused.
 - trimble-connect-workspace-api
 - @trimble-oss/modus-react-components (UI)
 
