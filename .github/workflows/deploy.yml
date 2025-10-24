@@ -1,7 +1,11 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ main, MARKUP ]
+    branches: [ main ]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,17 +13,19 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'  # Lisa see NPM jaoks
       - run: npm ci
-      - run: npm run build
+      - run: npm run build  # See genereerib /dist
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/
+          path: dist/  # Upload'i ainult builditud kaust
   deploy:
-    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
+    needs: build
     steps:
-      - uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
