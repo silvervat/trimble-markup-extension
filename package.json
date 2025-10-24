@@ -13,7 +13,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "trimble-connect-workspace-api": "^0.3.32",
-    "@trimble-oss/modus-react-components": "^1.8.2-react18",
+    ""@trimble-oss/modus-react-components": "^1.0.0",
     "lodash": "^4.17.21",
     "@trimble-graphics/modus-bootstrap": "^1.0.0"
   },
