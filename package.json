@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "trimble-connect-workspace-api": "^2.0.0",
+   "trimble-connect-workspace-api": "^0.3.32",
     "@trimble-oss/modus-react-components": "^1.8.2-react18",
     "lodash": "^4.17.21"
   },
