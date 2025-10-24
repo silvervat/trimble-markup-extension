@@ -1,0 +1,11 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2196f3;
+  text-align: center;
+}
